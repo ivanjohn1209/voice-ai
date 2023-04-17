@@ -12,7 +12,7 @@ function AiVoice() {
 
         var config = {
             method: 'post',
-            url: 'http://localhost:3000/api/ai',
+            url: '/api/ai',
             headers: {
                 'Content-Type': 'application/json'
             },

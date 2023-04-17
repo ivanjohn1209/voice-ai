@@ -9,7 +9,7 @@ export default async (req, res) => {
     // construct the message string
     const message = `v0:${req.headers['x-zm-request-timestamp']}:${JSON.stringify(req.body)}`
 
-    const hashForVerify = crypto.createHmac('sha256', process.env.ZOOM_SECRET_TOKEN).update(message).digest('hex')
+    const hashForVerify = crypto.createHmac('sha256', process.env.ZOOM_VERIFICATION_TOKEN).update(message).digest('hex')
 
     // hash the message string with your Webhook Secret Token and prepend the version semantic
     const signature = `v0=${hashForVerify}`
@@ -19,7 +19,7 @@ export default async (req, res) => {
 
         // Zoom validating you control the webhook endpoint https://marketplace.zoom.us/docs/api-reference/webhook-reference#validate-webhook-endpoint
         if (req.body.event === 'endpoint.url_validation') {
-            const hashForValidate = crypto.createHmac('sha256', process.env.ZOOM_SECRET_TOKEN).update(req.body.payload.plainToken).digest('hex')
+            const hashForValidate = crypto.createHmac('sha256', process.env.ZOOM_VERIFICATION_TOKEN).update(req.body.payload.plainToken).digest('hex')
 
             response = {
                 message: {

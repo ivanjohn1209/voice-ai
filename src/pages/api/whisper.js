@@ -1,29 +1,34 @@
-import axios from 'axios';
+// Next.js API route support: https://nextjs.org/docs/api-routes/introduction
+
+
+const { Configuration, OpenAIApi } = require("openai");
+import multiparty from 'multiparty'
 
 export default async function handler(req, res) {
-    const apiKey = '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';
-    const apiUrl = 'https://api.openai.com/v1/audio/transcriptions';
-    const { audioUrl } = req.body;
+    const buffer = req.body;
+    const form = new multiparty.Form()
+    form.parse(req, (err, fields, files) => {
+        if (err) throw err
 
-    try {
-        const response = await axios({
-            method: 'post',
-            url: apiUrl,
-            headers: {
-                'Content-Type': 'application/json',
-                'Authorization': `Bearer ${apiKey}`
-            },
-            data: {
-                audio_url: audioUrl,
-                model: 'whisper-2',
-                prompt: 'Transcribe the following audio:',
-                max_tokens: 1024
-            }
-        });
+        console.log(fields.fieldName)
 
-        res.status(200).json(response.data.choices)
-    } catch (error) {
-        console.error(error);
-        res.status(error.code).json(error)
-    }
+        // res.status(200).json({ value })
+    })
+    // const configuration = new Configuration({
+    //     apiKey: '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',
+    // });
+
+    // const openai = new OpenAIApi(configuration);
+    // const response = await openai.createTranscription(
+    //     buffer, // The audio file to transcribe.
+    //     "whisper-1", // The model to use for transcription.
+    //     undefined, // The prompt to use for transcription.
+    //     'json', // The format of the transcription.
+    //     1, // Temperature
+    //     'en' // Language
+    // )
+
+    // console.log(response);
+    // res.status(200).json(response)
+
 }

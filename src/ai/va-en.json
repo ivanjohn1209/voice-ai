@@ -1,0 +1,491 @@
+{
+    "name": "Virtual Assistant",
+    "locale": "en-US",
+    "data": [
+        {
+            "intent": "greeting",
+            "utterances": [
+                "Hi",
+                "Hello",
+                "Hey there",
+                "Good morning",
+                "Good afternoon",
+                "Good evening"
+            ],
+            "answers": [
+                "Hello! How can I help you today?",
+                "Hey there! What can I do for you?",
+                "Hi there! How can I assist you?",
+                "Greetings! What brings you here today?",
+                "Welcome! How can I be of service to you?"
+            ]
+        },
+        {
+            "intent": "goodbye",
+            "utterances": [
+                "Bye",
+                "Goodbye",
+                "See you later",
+                "Talk to you later",
+                "Until next time"
+            ],
+            "answers": [
+                "Goodbye! Have a great day.",
+                "Bye! Take care.",
+                "See you later! It was nice talking to you.",
+                "Talk to you later! Have a good one.",
+                "Until next time! Take care of yourself."
+            ]
+        },
+        {
+            "intent": "thanks",
+            "utterances": [
+                "Thank you",
+                "Thanks",
+                "Appreciate it",
+                "Thanks a lot",
+                "Thank you very much"
+            ],
+            "answers": [
+                "You're welcome! It was my pleasure to help.",
+                "No problem! Glad I could assist.",
+                "You got it! Happy to help.",
+                "Don't mention it! I'm here to assist whenever you need it.",
+                "Anytime! That's what I'm here for."
+            ]
+        },
+        {
+            "intent": "apology",
+            "utterances": [
+                "Sorry",
+                "Apologies",
+                "My apologies",
+                "I'm sorry",
+                "I apologize"
+            ],
+            "answers": [
+                "No problem, mistakes happen. Let's move forward.",
+                "It's all good. No need to apologize.",
+                "Don't worry about it. We all make mistakes.",
+                "No worries. Let's focus on finding a solution.",
+                "That's okay. Let's work together to fix the issue."
+            ]
+        },
+        {
+            "intent": "help",
+            "utterances": [
+                "Can you help me?",
+                "I need assistance",
+                "Can you assist me?",
+                "I'm stuck",
+                "I'm having trouble"
+            ],
+            "answers": [
+                "Of course, I'll do my best to help. What do you need assistance with?",
+                "Sure thing, what's the issue?",
+                "Absolutely, what can I assist you with?",
+                "I'm sorry to hear that. What can I do to help?",
+                "I'm here to help. What seems to be the problem?"
+            ]
+        },
+        {
+            "intent": "product.information",
+            "utterances": [
+                "What products do you offer?",
+                "Tell me about your products",
+                "What can I buy from you?",
+                "What do you sell?"
+            ],
+            "answers": [
+                "We offer a wide range of products, including {{ products }}. Which product are you interested in?",
+                "Our products include {{ products }}. Is there a specific one you want to know more about?",
+                "We sell {{ products }}. Do you have any questions about a specific product?",
+                "We have a variety of products available, such as {{ products }}. Is there one"
+            ]
+        },
+        {
+            "intent": "customer.product",
+            "utterances": [
+                "Can you help me find a product?",
+                "I'm looking for something specific, can you help me?",
+                "Can you recommend a product for me?",
+                "What do you have in stock?"
+            ],
+            "answers": [
+                "Of course! What type of product are you looking for? We have a wide range of products from electronics to home goods.",
+                "Absolutely! What category of product are you interested in? We have a variety of options to choose from.",
+                "Sure thing! Is there a particular brand or type of product you have in mind?",
+                "Definitely! We have a diverse selection of products available. What are you interested in?"
+            ]
+        },
+        {
+            "intent": "customer.sizing",
+            "utterances": [
+                "I'm not sure if this will fit me.",
+                "Can you help me find the right size?",
+                "Do you have a size chart?",
+                "What sizes do you carry?"
+            ],
+            "answers": [
+                "No problem, we have a size chart available online or you can try it on in-store. We also offer free returns if it doesn't fit.",
+                "Of course! We can help you find the right size or provide you with a size chart.",
+                "Absolutely! Our website has a size chart available for all products.",
+                "Definitely! We carry a range of sizes to accommodate all customers."
+            ]
+        },
+        {
+            "intent": "customer.promotions",
+            "utterances": [
+                "Do you have any promotions going on?",
+                "Are there any deals available?",
+                "Do you offer any discounts?",
+                "What promotions do you have?"
+            ],
+            "answers": [
+                "Yes, we're currently running a buy-one-get-one-free promotion on select items. Would you like me to send you a list?",
+                "Absolutely! We have a few different promotions currently available. Which one would you like to hear about?",
+                "Definitely! We have a variety of discounts and promotions. Which category of product are you interested in?",
+                "Certainly! We have a promotions page on our website where you can see all of our current deals."
+            ]
+        },
+        {
+            "intent": "customer.return",
+            "utterances": [
+                "I want to return this item.",
+                "Can I get a refund?",
+                "What is your return policy?",
+                "This item isn't what I expected, can I return it?"
+            ],
+            "answers": [
+                "I'm sorry to hear that. Do you have the original receipt and is the item in its original condition? We have a 30-day return policy.",
+                "Of course! We accept returns within 30 days of purchase, as long as the item is in its original condition and you have the receipt.",
+                "Absolutely! Our return policy allows for returns within 30 days of purchase, with the original receipt and item in its original condition.",
+                "Definitely! We have a straightforward return policy that allows for returns within 30 days of purchase, with the original receipt and item in its original condition."
+            ]
+        },
+        {
+            "intent": "customer.gift",
+            "utterances": [
+                "Can you help me find a gift?",
+                "I'm looking for a present for someone, any ideas?",
+                "What are some good gift options?",
+                "Can you recommend a gift for my friend?"
+            ],
+            "answers": [
+                "Certainly! What is your friend interested in? We have a variety of gift options for different hobbies and interests.",
+                "Of course! Is there anything specific your friend likes or is interested in?",
+                "Absolutely! We have a gift section on our website that categorizes gift options by interest and price range.",
+                "Definitely! We can help you find the perfect gift for your friend based on their hobbies and interests."
+            ]
+        },
+        {
+            "intent": "customer.purchase.inquiry",
+            "utterances": [
+                "Can you tell me more about this product?",
+                "What are the features of this item?",
+                "I'm interested in buying this product. Can you give me more information?",
+                "What is the price of this product?",
+                "Do you have any deals or promotions for this item?",
+                "Is this product in stock?",
+                "Can you help me find a similar product?",
+                "What is the warranty for this item?"
+            ],
+            "answers": [
+                "Sure, this product is {{ product }}. It features {{ features }}. The price is {{ price }}. We currently have {{ stock }} in stock. {{ promotion }}",
+                "This item is {{ product }}. It has {{ features }}. The price is {{ price }}. We have {{ stock }} in stock. {{ promotion }}",
+                "Of course, this is {{ product }}. Its features include {{ features }}. It is priced at {{ price }}. We have {{ stock }} in stock. {{ promotion }}",
+                "This is {{ product }}. Its features are {{ features }}. It is priced at {{ price }}. We currently have {{ stock }} available. {{ promotion }}",
+                "The product you are interested in is {{ product }}. It has {{ features }}. The price is {{ price }}. We have {{ stock }} available. {{ promotion }}"
+            ]
+        },
+        {
+            "intent": "customer.complaint",
+            "utterances": [
+                "I have a complaint",
+                "I'm not satisfied with my purchase",
+                "This item is defective",
+                "The product doesn't work",
+                "The product doesn't match the description",
+                "I received the wrong item",
+                "The item arrived damaged",
+                "I want to return this item"
+            ],
+            "answers": [
+                "I'm sorry to hear that you're having trouble. Please provide us with more details about the issue so we can help resolve it.",
+                "We apologize for any inconvenience caused. Can you provide us with your order number and more details about the issue?",
+                "We're sorry to hear that. Please provide us with more details about the problem and we'll do our best to assist you.",
+                "We apologize for any issues you've experienced with the product. Please tell us more about the problem so we can assist you further.",
+                "We're sorry to hear that you're not satisfied with your purchase. Please provide us with more details about the issue and we'll do our best to help.",
+                "We apologize for any inconvenience caused by this issue. Please provide us with more details about the problem and we'll work on resolving it as soon as possible.",
+                "We're sorry that you've received the wrong item. Please provide us with your order number and we'll work on resolving the issue as soon as possible.",
+                "We apologize for any damages caused during shipping. Please provide us with more details about the problem and we'll do our best to help resolve it.",
+                "We're sorry to hear that you want to return the item. Please provide us with your order number and we'll assist you with the return process."
+            ]
+        },
+        {
+            "intent": "customer.product_info",
+            "utterances": [
+                "Can you tell me more about this product?",
+                "What are the specifications of this product?",
+                "What is the price of this product?",
+                "Tell me about your [product/service]",
+                "What is your [product/service] like?",
+                "Can you give me more information about your [product/service]?",
+                "How does your [product/service] work?",
+                "What are the features of your [product/service]?"
+            ],
+            "answers": [
+                "Certainly! This product is [description of the product]. It has [specifications of the product]. The price of this product is [price of the product].",
+                "Absolutely! This product [description of the product]. It has [specifications of the product]. The price of this product is [price of the product].",
+                "Of course! This product is [description of the product]. It has [specifications of the product]. The price of this product is [price of the product].",
+                "Sure, our [product/service] is [description]. It works by [explanation]. Some of the key features include [features].",
+                "Our [product/service] is designed to [description]. The way it works is [explanation]. Here are some of the top features: [features].",
+                "Certainly, I'd be happy to provide more information about our [product/service]. It is [description], and operates by [explanation]. Here are some of the key features: [features]."
+            ]
+        },
+        {
+            "intent": "salesperson.complementary_product",
+            "utterances": [
+                "Have you considered [complementary product]?",
+                "If you like this product, you might also like [complementary product].",
+                "I think [complementary product] would be a great addition to your purchase."
+            ],
+            "answers": [
+                "That's a great suggestion! [Complementary product] is a [description of the complementary product]. It has [specifications of the complementary product]. The price of this product is [price of the complementary product].",
+                "I'm glad you mentioned that! [Complementary product] is a [description of the complementary product]. It has [specifications of the complementary product]. The price of this product is [price of the complementary product].",
+                "Excellent suggestion! [Complementary product] is a [description of the complementary product]. It has [specifications of the complementary product]. The price of this product is [price of the complementary product]."
+            ]
+        },
+        {
+            "intent": "customer.discount",
+            "utterances": [
+                "Is there any discount available on this product?",
+                "Can you offer me a better price for this product?",
+                "Do you have any ongoing promotions or discounts?"
+            ],
+            "answers": [
+                "I'm afraid we don't have any ongoing discounts or promotions at the moment. However, I can offer you [percentage/amount] off on this product.",
+                "I understand your concern, but the price of this product is fixed. However, I can offer you [percentage/amount] off on your next purchase.",
+                "I'm sorry, but we don't have any ongoing promotions or discounts. However, I can offer you a free [product/service] with your purchase."
+            ]
+        },
+        {
+            "intent": "pricing",
+            "utterances": [
+                "How much does your [product/service] cost?",
+                "What is the price of your [product/service]?",
+                "Can you tell me about the pricing of your [product/service]?",
+                "What are the payment options for your [product/service]?",
+                "Are there any discounts available for your [product/service]?"
+            ],
+            "answers": [
+                "Our [product/service] is priced at [price], and we offer [payment options]. There may be some discounts available, depending on the [specials/season/offers] that we have going on. Can I help you with anything else?",
+                "Certainly, the price of our [product/service] is [price]. We accept [payment options]. There may be some promotions currently available that could reduce the cost. Is there anything else you'd like to know?",
+                "Of course, our [product/service] is [price]. We have several [payment options], and there may be some discounts or special offers available. Would you like to know more about our pricing options?"
+            ]
+        },
+        {
+            "intent": "closing",
+            "utterances": [
+                "I'll think about it",
+                "Let me get back to you",
+                "I need more time to decide",
+                "This is too expensive for me",
+                "I'm not interested right now"
+            ],
+            "answers": [
+                "Sure, take your time to make a decision. If you have any questions or need additional information, feel free to reach out to us. We would be happy to assist you further!",
+                "No problem, we understand that making a decision like this can take some time. Let us know if there's anything else we can do to help or if you have any further questions.",
+                "Absolutely, we want to make sure that you make the right decision for you. If there's anything we can do to provide more information or address any concerns you have"
+            ]
+        },
+        {
+            "intent": "salesperson.higher_priced_product",
+            "utterances": [
+                "Have you considered this higher-priced product?",
+                "If you're looking for a better quality product, you might want to consider this higher-priced option.",
+                "I think this higher-priced product would be a great investment for you."
+            ],
+            "answers": [
+                "I understand that the price of this product might be a concern for you, but this higher-priced product is worth the investment. It has [specifications of the higher-priced product], and the quality is [quality of the higher-priced product]. The price of this product is [price of the higher-priced product].",
+                "I'm glad you're interested in this higher-priced product! It has [specifications of the higher-priced product], and the quality is [quality of the higher-priced product]. The price of this product is [price of the higher-priced product].",
+                "Excellent choice! This higher-priced product is a great investment. It has [specifications of the higher-priced product], and the quality is [quality of the higher-priced"
+            ]
+        },
+        {
+            "intent": "payment.make_payment",
+            "utterances": [
+                "How can I make a payment?",
+                "What are my payment options?",
+                "Can I pay my bill online?",
+                "I'd like to make a payment.",
+                "Is there a fee for making a payment?"
+            ],
+            "answers": [
+                "You can make a payment online by logging into your account on our website, or by calling our customer service line.",
+                "We accept credit card and bank transfers as payment methods.",
+                "Yes, you can pay your bill online. Please visit our website for more information.",
+                "Sure, I can help you make a payment now. How much would you like to pay?"
+            ]
+        },
+        {
+            "intent": "payment.dispute_charge",
+            "utterances": [
+                "I need to dispute a charge.",
+                "This charge is incorrect.",
+                "I didn't make this charge.",
+                "Can you help me with a charge dispute?",
+                "I want to report a fraudulent charge."
+            ],
+            "answers": [
+                "I'm sorry to hear that. We'll need to investigate the charge to determine the appropriate action. Please provide more details about the disputed charge.",
+                "I understand. We'll need to review the charge to determine the best course of action. Can you provide more information about the disputed charge?",
+                "I apologize for any inconvenience. Let's work together to resolve this charge dispute. Can you give me more information about the disputed charge?",
+                "I'm sorry that you're experiencing a problem with your account. We'll need to look into the disputed charge before we can take any further action. Can you provide more details about the disputed charge?"
+            ]
+        },
+        {
+            "intent": "payment.assist_with_fraud",
+            "utterances": [
+                "I think my account has been hacked.",
+                "Someone made a fraudulent charge on my account.",
+                "Can you help me with a fraud investigation?",
+                "I need to report unauthorized activity on my account."
+            ],
+            "answers": [
+                "I'm sorry to hear that. We take fraud very seriously and will work with you to investigate and resolve the issue. Can you provide more details about the unauthorized activity?",
+                "I understand how stressful this situation can be. We'll work with you to investigate and resolve any fraudulent activity on your account. Can you provide more information about the suspicious activity?",
+                "I apologize for any inconvenience caused by unauthorized activity on your account. We'll work to investigate and resolve the issue. Can you provide more information about the suspected fraud?",
+                "I'm sorry that you're experiencing a problem with your account. We take all cases of suspected fraud very seriously and will work to investigate and resolve the issue. Can you give me more information about the suspected unauthorized activity?"
+            ]
+        },
+        {
+            "intent": "about.company",
+            "utterances": [
+                "Tell me about your company",
+                "What does your company do?",
+                "Can you give me an overview of your company?"
+            ],
+            "answers": [
+                "Our company provides [product/service]. We have been in business for [number of years] and are dedicated to providing our customers with the best possible experience.",
+                "We are a [description of company] that focuses on [product/service]. Our mission is to [company mission statement].",
+                "Our company was founded on the principles of [company values]. We provide [product/service] and are committed to excellence in everything we do."
+            ]
+        },
+        {
+            "intent": "company.history",
+            "utterances": [
+                "Can you tell me about the history of your company?",
+                "How did your company get started?",
+                "What's the story behind your company?"
+            ],
+            "answers": [
+                "Our company was founded in [year] by [founder's name] with the goal of [company goal]. Since then, we have [company achievements].",
+                "The idea for our company was born out of [company origin story]. Since then, we have [company achievements] and are proud to be a leader in the [industry/field].",
+                "Our company got started when [company origin story]. Today, we are [company achievements] and are constantly striving to [company mission statement]."
+            ]
+        },
+        {
+            "intent": "company.values",
+            "utterances": [
+                "What are your company values?",
+                "Can you tell me about your company culture?",
+                "What's important to your company?"
+            ],
+            "answers": [
+                "At our company, we value [company values]. We believe that [philosophy behind values] and strive to uphold these values in everything we do.",
+                "Our company culture is built on [company values]. We believe that [philosophy behind values] and work hard to maintain a positive and inclusive work environment.",
+                "What's important to our company is [company values]. We believe that [philosophy behind values] and strive to embody these values every day."
+            ]
+        },
+        {
+            "intent": "company.contact",
+            "utterances": [
+                "How can I contact your company?",
+                "What's your company's phone number?",
+                "Can you give me your company's email address?"
+            ],
+            "answers": [
+                "You can contact us by [contact method]. Our phone number is [phone number] and our email address is [email address].",
+                "To reach our company, you can [contact method]. Our phone number is [phone number] and our email address is [email address].",
+                "If you need to get in touch with us, you can [contact method]."
+            ]
+        },
+        {
+            "intent": "product.info",
+            "utterances": [
+                "Can you tell me about [product]?",
+                "What can you tell me about [product]?",
+                "I'm interested in learning more about [product]",
+                "What's the deal with [product]?"
+            ],
+            "answers": [
+                "Certainly! [product] is a high-quality product that is known for its reliability and performance. It's a great choice for anyone looking for a durable and long-lasting solution.",
+                "Of course! [product] is a top-of-the-line product that is designed to meet the needs of even the most demanding customers. Its advanced features and exceptional quality make it an excellent choice for anyone looking for a reliable and powerful product.",
+                "Absolutely! [product] is an outstanding product that is highly-regarded in the industry for its exceptional performance and reliability. Its advanced features and cutting-edge design make it an ideal choice for anyone looking for a product that can keep up with their demanding needs.",
+                "No problem! [product] is an impressive product that has received high praise from customers and experts alike. Its outstanding performance and exceptional design make it an excellent choice for anyone looking for a top-of-the-line product."
+            ]
+        },
+        {
+            "intent": "product.compare",
+            "utterances": [
+                "What are the differences between [product1] and [product2]?",
+                "Can you help me compare [product1] and [product2]?",
+                "What makes [product1] better than [product2]?",
+                "Why should I choose [product1] over [product2]?"
+            ],
+            "answers": [
+                "Sure thing! [product1] and [product2] are both great products, but they do have some differences. [product1] is known for its exceptional performance and reliability, while [product2] is known for its advanced features and cutting-edge design.",
+                "Absolutely! [product1] and [product2] are both impressive products, but they have some differences that you may want to consider. [product1] is a top-of-the-line product that is designed for performance and reliability, while [product2] is known for its innovative features and exceptional design.",
+                "No problem! [product1] and [product2] are both excellent products, but they do have some key differences. [product1] is a reliable and powerful product that is known for its outstanding performance, while [product2] is designed to meet the needs of customers who demand the latest and greatest technology.",
+                "Absolutely! [product1] and [product2] are both outstanding products, but they have some differences that you may want to consider. [product1] is a powerful and reliable product that is designed to meet the needs of even the most demanding customers, while [product2] is known for its innovative features and advanced design."
+            ]
+        },
+        {
+            "intent": "product.purchase",
+            "utterances": [
+                "I want to buy {product_name}",
+                "How can I purchase {product_name}?",
+                "Can I order {product_name}?",
+                "Can I buy {product_name} online?",
+                "How do I get {product_name}?",
+                "What is the process for buying {product_name}?"
+            ],
+            "answers": [
+                "Great choice! To purchase {product_name}, please visit our website or contact our sales team at {contact_number}.",
+                "To purchase {product_name}, you can visit our website or contact our sales team at {contact_number}.",
+                "You can purchase {product_name} by visiting our website or contacting our sales team at {contact_number}."
+            ]
+        },
+        {
+            "intent": "product.availability",
+            "utterances": [
+                "Is {product_name} in stock?",
+                "Can I buy {product_name} now?",
+                "Do you have {product_name} available?",
+                "When will {product_name} be back in stock?",
+                "Is {product_name} available for purchase?"
+            ],
+            "answers": [
+                "{product_name} is currently in stock and available for purchase.",
+                "Yes, {product_name} is currently available for purchase.",
+                "We have {product_name} in stock and ready for purchase."
+            ]
+        },
+        {
+            "intent": "product.rating",
+            "utterances": [
+                "What are the ratings for {product_name}?",
+                "Can you tell me about the reviews of {product_name}?",
+                "What is the rating for {product_name}?",
+                "How good is {product_name} according to customer reviews?",
+                "What do people say about {product_name}?"
+            ],
+            "answers": [
+                "{product_name} has an average rating of {product_rating} based on {product_reviews} reviews.",
+                "{product_name} is rated {product_rating} based on {product_reviews} customer reviews.",
+                "{product_name} has received {product_rating} stars out of 5 based on {product_reviews} reviews."
+            ]
+        }
+    ]
+}

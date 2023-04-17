@@ -1,7 +1,7 @@
 import { createHash } from 'crypto'
 
 export default async (req, res) => {
-    if (req.method === 'GET') {
+    if (req.method === 'POST') {
         // Respond to the validation request
         const params = req.query
         const verifyToken = process.env.ZOOM_VERIFICATION_TOKEN
